@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/add-emp.css">
+</head>
+<body>
+    <form action="#add-emp" method="Post">
+        <div class="close">
+            <a href="/employees">&times;</a>
+        </div>
+        <h1>Add Employee</h1>
+        <article>
+            <div>
+                <label for="firstname">Firstname<span class="red">*</span></label>
+                    <input type="text" name="firstname" id="firstname">
+                <label for="username">Username<span class="red">*</span></label>
+                    <input type="text" name="username" id="username">
+                <label for="Password">Password</label>
+                    <input type="password" name="password" id="password" value="123456">
+                <label for="employee id">Employee ID<span class="red">*</span></label>
+                    <input type="text" name="employee id" id="employee id">
+                <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone">
+                <label for="department">Department<span class="red">*</span></label>
+                    <input type="text" name="department" id="department">
+            </div>
+            <div>
+                <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname">
+                <label for="email">E-mail<span class="red">*</span></label>
+                    <input type="text" name="email" id="email" value="admin@mail.com">
+                <label for="confirmPassword">Confirm password</label>
+                    <input type="confirmPassword" name="confirmPassword" id="confirmPassword">
+                <label for="joiningDate">Joining Date<span class="red">*</span></label>
+                    <input type="date" name="joiningDate" id="joiningDate">
+                <label for="company">Company</label>
+                    <input type="text" name="company" id="company">
+                <label for="designation">Designation<span class="red">*</span></label>
+                    <input type="text" name="designation" id="designation">
+            </div>
+        </article>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

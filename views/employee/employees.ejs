@@ -1,0 +1,35 @@
+  <%- include('../includes/head')  %>
+  <link rel="stylesheet" href="/css/employees.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <main id="main">
+    <article>
+      <section class="flex">
+        <div>
+          <h1><span class="big">Employees</span> <br> Dashboard / <span class="grey">Employees</span></h1>
+        </div>
+
+        <div>
+          <span class="burger">&#9776;</span>
+          <a href="/add-emp" class="add-emp">+ Add employee</a>
+        </div>
+      </section>
+      <section class="inputs">
+        <input type="text" placeholder="Employee ID" class="input">
+        <input type="text" placeholder="Employee Name" class="input">
+        <input type="text" placeholder="Designation" class="input">
+        <button type="submit" class="search-btn">SEARCH</button>
+      </section>
+      <section>
+        <div class="employee">
+          <img src="/images/avatar.png" alt="Employee" width="150px" height="auto">
+          <h2 class="block">John Doe</h2>
+          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+          <p class="block"><span class="grey">Web developer</span></p>
+        </div>
+      </section>
+      <span class="right"><i class="fa fa-gear fa-spin" style="font-size:55px; color:#ff9b45;;"></i></span>
+    </article>
+  </main>
+
+  <%- include('../includes/end') %>

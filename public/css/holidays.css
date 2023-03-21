@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu&display=swap');
+
+* {
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+}
+
+/* || UTILITY STYLES */
+
+.ubuntu {
+  font-family: Ubuntu, sans-serif;
+}
+
+.red {
+  color: red; 
+}
+
+.right {
+  position: fixed; 
+  left: 87rem; 
+  bottom: 3rem; 
+}
+
+.grey {
+  color: #696969;
+}
+
+.big {
+  font-size: 2.3rem; 
+  line-height: 4rem; 
+}
+
+.flex {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white {
+  background: #fff;
+}
+
+.margin-top {
+  margin-top: 3rem;
+  padding: 1.2rem; 
+}
+
+.greyBG {
+  background: #E9E9E9;
+}
+
+/* || GENERAL STYLES */
+
+#main {
+  padding:  1rem 3rem; 
+}
+
+.addHol-btn {
+  text-decoration: none; 
+  padding: 0.6rem; 
+  border: 1px solid #ff9b45;
+  border-radius: 20px; 
+  color: #fff; 
+  background: #ff9b45;
+  font-weight: bold;   
+}
+
+.row {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  border: none;
+  border-top: none;
+  border-radius: 2px;
+  padding: 0.7rem;
+  color: #000;
+}
+
+button {
+  padding: 0.8rem; 
+  border: 0px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.buttons .edit {
+  background: #ff9b45;
+}
+
+.buttons .edit:hover {
+  background: #ff8011;
+  transition: .5s;
+}
+
+.buttons .delete {
+  background: #fd7464;
+  transition: .5s;
+
+}
+
+.buttons .delete:hover {
+  background: #ff341e;
+}
+
+
+

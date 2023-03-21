@@ -1,0 +1,35 @@
+<%- include('../includes/head') %>
+<link rel="stylesheet" href="/css/holidays.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<main id="main">
+    <section>
+        <div class="flex">
+            <h2><span class="big">Holidays</span> <br> Dashboard / <span class="grey">Holidays</span></h2>
+            <a href="#add-holiday" class="addHol-btn">+ Add Holiday</a>
+        </div>
+    </section>
+    <section class="column">
+        <div class="row white margin-top">
+            <strong><p>#</p></strong>
+            <strong><p>Title</p></strong>
+            <strong><p>Holiday date</p></strong>
+            <strong><p>Day</p></strong>
+            <strong><p>Action</p></strong>
+        </div>
+
+        <div class="row greyBG">
+            <strong><p>1</p></strong>
+            <strong><p>New Year</p></strong>
+            <strong><p>1 Jun 2023</p></strong>
+            <strong><p>Sunday</p></strong>
+            <div class="buttons">
+                <button class="fa fa-edit edit ubuntu"> Edit</button>
+                <button class="fa fa-trash delete ubuntu"> Delete</button>
+            </div>
+        </div>
+    </section>
+    <span class="right"><i class="fa fa-gear fa-spin" style="font-size:55px; color:#ff9b45;;"></i></span>
+</main>
+
+<%- include('../includes/end') %>

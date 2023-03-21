@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div>
+        <img src="" alt="">
+        <h1 class="ubuntu" id="toggle">
+          <span id="openNav" class="pointer">&#9776;</span> 
+              Dream guy's Technologies
+        </h1>
+      </div>
+      <div class="flex">
+        <input type="text" placeholder="Search here" name="search" class="search">
+        <div class="dropdown">
+          <span class="flex dropdown-btn">
+            <img src="/images/avatar.png" alt="Admin" width="50px" height="auto"> 
+            <strong><p class="ubuntu">Admin</p></strong>
+          </span>
+          <form action="/logout" method="POST">
+            <div class="dropdown-content">
+              <a>
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <button type="submit" style="border: none; background: inherit; font-size: large;">Logout</button>
+              </a>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+  <div class="sidenav" id="sidenav">
+    <a href="javascript:void(0)" id="closeNav" class="closebtn">&times;</a>
+    <div class="dropdown-side">
+      <p class="dropdown-btn_emp ubuntu white"><i class="fa fa-fw fa-user"></i> Employees</p>
+      <div class="dropdown-content-emp">
+        <a href="/employees" class="<% if(path === '/employees') { %> active <% } %>">All Employees</a>
+        <a href="/holidays">Holidays</a>
+        <a href="#employees">Leave (admin)</a>
+        <a href="#employees">Leaves (employee)</a>
+        <a href="#employees">Leave settings</a>
+        <a href="#employees">Attendance (admin)</a>
+        <a href="#employees">Attendance (employee)</a>
+        <a href="#employees">Departments</a>
+        <a href="#employees">Designations</a>
+        <a href="#employees">Timesheet</a>
+        <a href="#employees">Shift & schedule</a>
+        <a href="#employees">Overtime</a>
+      </div>
+    </div>
+    <div class="dropdown-side">
+      <p class="dropdown-btn_payroll ubuntu white"><i class="fa fa-fw fa-money"></i> Payroll</p>
+      <div class="dropdown-content-payroll">
+        <a href="#employees">Employee salary</a>
+        <a href="#employees">Payslip</a>
+        <a href="#employees">Payroll Items</a>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const openNav = document.getElementById('openNav');
+  const sidenav = document.querySelector('.sidenav');
+  const closeNav = document.getElementById('closeNav'); 
+
+  openNav.addEventListener('click', (e) => {
+    sidenav.style.width = '250px'; 
+    document.getElementById("main").style.marginLeft = "250px";
+  }); 
+
+  closeNav.addEventListener('click', (e) => {
+    sidenav.style.width = '30px'; 
+    document.getElementById("main").style.marginLeft = "30px";
+  });
+</script>

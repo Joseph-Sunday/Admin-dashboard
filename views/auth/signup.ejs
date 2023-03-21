@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <main>
+    <article>
+      <form action="/signup" method="Post">
+        <h1 class="ubuntu text-center">Sign Up</h1>
+        <label for="email" class="ubuntu"><strong>Email Address</strong></label>
+          <input type="text" name="email" id="email" class="input-email" value="admin@mail.com" required>
+
+        <label for="password" class="ubuntu label"><strong>Password</strong></label>
+          <input type="password" name="password" id="password" class="input-password" value="123456" required>
+
+        <label for="confirmPassword" class="ubuntu label"><strong>Confirm Password*</strong></label>
+          <input type="password" name="confirmPassword" id="confirmPassword" class="input-password" value="123456" required>
+
+        <label for="showPassword" class="ubuntu label">Show password</label>
+          <input type="checkbox" name="showPassword" id="showPassword" class="checkbox">
+          
+          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <button type="submit" class="btn ubuntu">Sign Up</button>
+        <p class="text-center">Do you have an account yet? <a href="/">Login</a></p>
+      </form>
+    </article>
+  </main>
+  <script>
+    const password = document.getElementById('password'); 
+    const confirmPassword = document.getElementById('confirmPassword');
+    const showPassword = document.getElementById('showPassword');
+
+    showPassword.addEventListener('click', (e) => {
+      if(password.type === "password" && confirmPassword.type === "password") {
+        password.type = "text";
+        confirmPassword.type = "text";
+      }else{
+        password.type = "password"; 
+        confirmPassword.type = "password"
+      }
+    })
+  </script>
+</body>
+</html>
