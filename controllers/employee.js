@@ -20,9 +20,37 @@ exports.getHolidays = (req, res, next) => {
   });
 };
 
+exports.getAddHol = (req, res, next) => {
+  res.status(200).render('employee/add-holiday', {
+    pageTitle: 'Add-holiday', 
+    path: '/add-hol'
+  });
+};
+
 exports.getLeavesAdm = (req, res, next) => {
   res.status(200).render('employee/leaves-adm', {
     pageTitle: 'Leaves-(Admin)', 
     path: '/Leaves-adm'
+  });
+};
+
+exports.getAdmLeave = (req, res, next) => {
+  res.status(200).render('employee/adm-leave', {
+    pageTitle: 'Add-Leave', 
+    path: '/adm-leave'
+  });
+};
+
+exports.getLeavesEmp = (req, res, next) => {
+  res.status(200).render('employee/leaves-emp', {
+    pageTitle: 'Leaves-(Employee)', 
+    path: '/Leaves-emp'
+  });
+};
+
+exports.getEmpLeave = (req, res, next) => {
+  res.status(200).render('employee/emp-leave', {
+    pageTitle: 'Add-Leave', 
+    path: '/emp-leave'
   });
 };

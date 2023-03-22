@@ -27,7 +27,7 @@
 }
 
 .big {
-  font-size: 2.3rem; 
+  font-size: 2.1rem; 
   line-height: 4.5rem; 
 }
 
@@ -42,12 +42,11 @@
 }
 
 .margin-top {
-  margin-top: 2rem;
-  padding: 1.2rem; 
+  margin-top: 2rem; 
 }
 
 .greyBG {
-  background: #E9E9E9;
+  background: #ededed;
 }
 
 .noDelete {
@@ -122,7 +121,7 @@ button {
   font-size: larger;
   border-radius: 5px;
   width: 290px; 
-  margin: 1rem 0;
+  margin: 2rem 0 1rem 0;
   text-align: center;
 }
 
@@ -156,6 +155,8 @@ span p {
   border-radius: 5px; 
   width: 190px;
   margin-top: 1rem; 
+  font-size: large;
+  font-weight: bold;
 }
 
 .searchBtn:hover {

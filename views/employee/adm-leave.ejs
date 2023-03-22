@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle%></title>
+    <link rel="stylesheet" href="/css/add-hol.css">
+</head>
+<body>
+    <main>
+        <article>
+            <form action="#add-holiday" method="POST" class="form">
+                <div class="close">
+                    <a href="/leaves-adm">&times;</a>
+                </div>
+                <h1>Add Leave</h1>
+                <section>
+                    <label for="leaveType">Leave Type <span class="red">*</span></label>
+                        <input type="text" name="leaveType" id="leaveType">
+                    <label for="from">From <span class="red">*</span></label>
+                        <input type="date" name="from" id="from">
+                    <label for="to">To <span class="red">*</span></label>
+                        <input type="date" name="day" id="day">
+                    <label for="numDays">Number of days <span class="red">*</span></label>
+                        <input type="text" name="numDays" id="numDays" disabled>
+                    <label for="remainingDays">Remaining Days <span class="red">*</span></label>
+                        <input type="text" name="nuremainingDaysmDays" id="remainingDays" disabled>
+                    <label for="leaveReason">Leave Reason <span class="red">*</span></label>
+                        <textarea type="text" name="leaveReason" id="leaveReason"></textarea>
+                    <form action="#add-holiday" method="post">
+                        <div class="center">
+                            <button class="save-btn">Save</button>
+                        </div>
+                    </form>
+                </section>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
