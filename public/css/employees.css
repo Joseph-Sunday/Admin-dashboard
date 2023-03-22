@@ -1,6 +1,6 @@
 
 #main {
-  padding: 3rem; 
+  padding: 1rem 1rem 1rem 3rem; 
 }
 
 .flex {
@@ -70,7 +70,7 @@
 
 .big {
   font-size: 1.8rem;
-  line-height: 3rem;
+  line-height: 4.5rem;
 }
 
 .search-btn {

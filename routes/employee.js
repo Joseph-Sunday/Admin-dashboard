@@ -10,4 +10,6 @@ router.get('/add-emp', isAuth, employeeController.getAddEmp);
 
 router.get('/holidays', isAuth, employeeController.getHolidays); 
 
+router.get('/leaves-adm', isAuth, employeeController.getLeavesAdm); 
+
 module.exports = router;

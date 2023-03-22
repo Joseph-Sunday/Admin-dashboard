@@ -28,7 +28,7 @@
 
 .big {
   font-size: 2.3rem; 
-  line-height: 4rem; 
+  line-height: 4.5rem; 
 }
 
 .flex {
@@ -37,12 +37,12 @@
   align-items: center;
 }
 
-.white {
+.whiteBG {
   background: #fff;
 }
 
 .margin-top {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 1.2rem; 
 }
 
@@ -50,10 +50,20 @@
   background: #E9E9E9;
 }
 
+.noDelete {
+  color: #e0e0e0;
+}
+
+.row-flex {
+  display: flex; 
+  align-items: center;
+  gap: 0.5rem
+}
+
 /* || GENERAL STYLES */
 
 #main {
-  padding:  1rem 3rem; 
+  padding:  1rem 1rem 1rem 3rem; 
 }
 
 .addHol-btn {
@@ -75,6 +85,8 @@
   border-radius: 2px;
   padding: 0.7rem;
   color: #000;
+  text-align: center;
+  overflow: hidden;
 }
 
 button {
@@ -103,5 +115,51 @@ button {
   background: #ff341e;
 }
 
+.box {
+  padding: 1.2rem; 
+  border: 1px solid #dbdbdb; 
+  background: #fff;
+  font-size: larger;
+  border-radius: 5px;
+  width: 290px; 
+  margin: 1rem 0;
+  text-align: center;
+}
 
+.box span {
+  display: flex; 
+  justify-content: center;
+  gap: 0.5rem;
+}
 
+span p {
+  align-self: last baseline;
+  font-weight: light;
+  font-family: calibri, sans-serif;
+  font-size: medium;
+  color: #a1a1a1; 
+}
+
+.searchInput {
+  padding: 1rem; 
+  border: 1px solid #dedede; 
+  background: #fff;
+  border-radius: 5px; 
+  width: 190px;
+  margin-top: 1rem;
+}
+
+.searchBtn {
+  padding: 1rem; 
+  border: 1px solid #55cc67; 
+  background: #55cc67;
+  border-radius: 5px; 
+  width: 190px;
+  margin-top: 1rem; 
+}
+
+.searchBtn:hover {
+  background-color: #68a41f;
+  border: 1px solid #68a41f; 
+  transition: 3s;
+}

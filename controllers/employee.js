@@ -19,3 +19,10 @@ exports.getHolidays = (req, res, next) => {
     path: '/holidays'
   });
 };
+
+exports.getLeavesAdm = (req, res, next) => {
+  res.status(200).render('employee/leaves-adm', {
+    pageTitle: 'Leaves-(Admin)', 
+    path: '/Leaves-adm'
+  });
+};
