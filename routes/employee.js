@@ -20,4 +20,6 @@ router.get('/leaves-emp', isAuth, employeeController.getLeavesEmp);
 
 router.get('/emp-leave', isAuth, employeeController.getEmpLeave);
 
+router.get('/leave-sett', isAuth, employeeController.getLeaveSett);
+
 module.exports = router;

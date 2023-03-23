@@ -2,9 +2,280 @@
 <link rel="stylesheet" href="/css/leave-sett.css">
 
 <main id="main">
-    <section>
-        <div></div>
+    <div>
+        <h3><span class="big">Leaves Settings</span> <br> Dashboard / <span class="light">Leave Settings</span></h3>
+    </div>
+    <section class="container">
+        <div class="flex">
+            <h1>Annual</h1>
+            <label for="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div>
+            <h5 class="daysFlex-label">Days</h5>
+            <div class="daysFlex">
+                <input type="text" name="days" id="days" disabled>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h5 class="daysFlex-label">Carry Forward</h5>
+            <div class="radioFlex">
+                <div class="flex-row">
+                    <div class="ma-btm">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="carryFwrd" disabled>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="carryFwrd" disabled>
+                    </div>
+                    <div class="radioFlex-merge">
+                        <button>Max</button>
+                        <input type="text" disabled>
+                    </div>
+                </div>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h5 class="daysFlex-label">Earned Leave</h5>
+            <div class="radio-row">
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="earnedLve" disabled>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="earnedLve" disabled>
+                </div>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex custom-policy">
+                <div>
+                    <h5 class="daysFlex-label">Custom Policy</h5>
+                </div>
+                <button type="submit" class="add-policy">+ Add Custom Policy</button>
+            </div>
+        </div>
+        <hr>
+
+        <div>
+            <div class="flex-head">
+                <h4>Name</h4>
+                <h4>Days</h4>
+                <h4>Asignee</h4>
+            </div>
+            <hr>
+
+            <div class="flex grey-hov">
+                <div class="flex-head__value">
+                    <p>5 Year Service</p>
+                    <p>5 Days</p>
+                    <div class="assignee">
+                        <img src="/images/avatar3.png" alt="John Doe" width="40px" height="auto">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="edit-btn"><span class="fa fa-edit"></span> Edit</button>
+                    <button class="delete-btn"><span class="fa fa-trash"></span> Delete</button>
+                </div>
+            </div>
+            
+        </div>
     </section>
+
+    <section class="container">
+        <h1>Sick</h1>
+        <div>
+            <h5 class="daysFlex-label">Days</h5>
+
+            <div class="daysFlex">
+                <input type="text" name="days" id="days" disabled>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h1>Hospitalisation</h1>
+
+        <h5 class="daysFlex-label">Days</h5>
+
+        <div class="daysFlex">
+            <input type="text" name="days" id="days" disabled>
+            <div class="btn-cont">
+                <button type="submit">Edit</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex custom-policy">
+                <div>
+                    <h5 class="daysFlex-label">Custom Policy</h5>
+                </div>
+                <button type="submit" class="add-policy">+ Add Custom Policy</button>
+            </div>
+        </div>
+        <hr>
+
+        <div>
+            <div class="flex-head">
+                <h4>Name</h4>
+                <h4>Days</h4>
+                <h4>Asignee</h4>
+            </div>
+            <hr>
+
+            <div class="flex grey-hov">
+                <div class="flex-head__value">
+                    <p>5 Year Service</p>
+                    <p>5 Days</p>
+                    <div class="assignee">
+                        <img src="/images/avatar3.png" alt="John Doe" width="40px" height="auto">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="edit-btn"><span class="fa fa-edit"></span> Edit</button>
+                    <button class="delete-btn"><span class="fa fa-trash"></span> Delete</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="container">
+        <h1>Maternity Assigned To Female's Only</h1>
+        <div>
+            <h5 class="daysFlex-label">Days</h5>
+
+            <div class="daysFlex">
+                <input type="text" name="days" id="days" disabled>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h1>Paternity Assigned To Male's Only</h1>
+        <div>
+            <h5 class="daysFlex-label">Days</h5>
+
+            <div class="daysFlex">
+                <input type="text" name="days" id="days" disabled>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="flex">
+            <h1>LOP</h1>
+            <label for="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div>
+            <h5 class="daysFlex-label">Days</h5>
+            <div class="daysFlex">
+                <input type="text" name="days" id="days" disabled>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h5 class="daysFlex-label">Carry Forward</h5>
+            <div class="radioFlex">
+                <div class="flex-row">
+                    <div class="ma-btm">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="carryFwrd" disabled>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="carryFwrd" disabled>
+                    </div>
+                    <div class="radioFlex-merge">
+                        <button>Max</button>
+                        <input type="text" disabled>
+                    </div>
+                </div>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h5 class="daysFlex-label">Earned Leave</h5>
+            <div class="radio-row">
+                <div>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="earnedLve" disabled>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="earnedLve" disabled>
+                </div>
+                <div class="btn-cont">
+                    <button type="submit">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex custom-policy">
+                <div>
+                    <h5 class="daysFlex-label">Custom Policy</h5>
+                </div>
+                <button type="submit" class="add-policy">+ Add Custom Policy</button>
+            </div>
+        </div>
+        <hr>
+
+        <div>
+            <div class="flex-head">
+                <h4>Name</h4>
+                <h4>Days</h4>
+                <h4>Asignee</h4>
+            </div>
+            <hr>
+
+            <div class="flex grey-hov">
+                <div class="flex-head__value">
+                    <p>5 Year Service</p>
+                    <p>5 Days</p>
+                    <div class="assignee">
+                        <img src="/images/avatar3.png" alt="John Doe" width="40px" height="auto">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="edit-btn"><span class="fa fa-edit"></span> Edit</button>
+                    <button class="delete-btn"><span class="fa fa-trash"></span> Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <span class="right"><i class="fa fa-gear fa-spin" style="font-size:55px; color:#ffa454;"></i></span>
 </main>
 
-<%- include('../includes/head')  %>
+<%- include('../includes/end')  %>

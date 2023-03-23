@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu&display=swap');
+
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+/* || UTILITY STYLES */
+
+.ubuntu {
+    font-family: Ubuntu, sans-serif;
+}
+
+.red {
+    color: red; 
+}
+
+.ma-btm {
+    margin-bottom: 1rem;
+}
+
+.right {
+    position: fixed; 
+    left: 87rem; 
+    bottom: 3rem; 
+}
+
+.grey {
+    color: #696969;
+}
+
+.big {
+    font-size: 2.1rem; 
+    line-height: 3.6rem; 
+}
+
+.flex {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whiteBG {
+    background: #fff;
+}
+
+.margin-top {
+    margin-top: 2rem; 
+}
+
+.greyBG {
+    background: #ededed;
+}
+
+.noDelete {
+    color: #e0e0e0;
+}
+
+.row-flex {
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem
+}
+
+.grey-hov:hover {
+    background: #ededed;
+    transition: .3s;
+}
+
+.grey-hov {
+    padding: 0 1rem;
+}
+
+/* || GENERAL STYLES */
+
+#main {
+    padding:  1rem 1rem 1rem 3rem;
+    margin-left: 1rem; 
+}
+
+.container {
+    padding: 1rem; 
+    border-radius: 5px; 
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: #fff;
+    margin: 2.5rem auto 0; 
+}
+
+/* .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+  /* Rounded sliders */
+/* .slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+} */
+
+.daysFlex {
+    display: flex; 
+    justify-content: start;
+    align-items: center; 
+    gap: 20rem; 
+}
+
+.daysFlex-label {
+    margin: 2.5rem 0 0; 
+    font-size: large;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block; 
+}
+
+.daysFlex input {
+    margin-top: 0.5rem; 
+    padding: 1rem; 
+    border: 1px solid #d8d8d8; 
+    border-radius: 5px;
+    width: 400px;  
+}
+
+.daysFlex button {
+    padding: 1rem; 
+    border: none; 
+    background: #fff; 
+    color: rgb(40, 119, 255);
+    font-size: large; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline; 
+}
+
+.radioFlex {
+    display: flex; 
+    justify-content: start;
+    align-items: center; 
+    gap: 16.4rem;
+}
+
+.btn-cont button {
+    padding: 1rem; 
+    border: none; 
+    background: #fff; 
+    color: rgb(40, 119, 255);
+    font-size: large; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.radioFlex-merge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+}
+
+.radioFlex-merge button {
+    padding: 1rem;
+    margin-top: 0.5rem; 
+    border: 1px solid #d8d8d8;
+    border-right: none;
+    border-bottom-left-radius: 5px; 
+    border-top-left-radius: 5px;
+    text-align: center;
+    background: #e7e7e7;
+    font-size: large;
+    font-weight: bolder; 
+}
+
+.radioFlex-merge input {
+    padding: 1rem; 
+    margin-top: 0.5rem;
+    border: 1px solid #d8d8d8;
+    border-bottom-right-radius: 5px; 
+    border-top-right-radius: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+.radio-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 39.5rem;
+}
+
+.add-policy {
+    padding: 0.5rem; 
+    border: none; 
+    border-radius: 3px;
+    background: #ffaf6a;
+    color: #fff; 
+    font-size: medium;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.add-policy:hover {
+    background: #ff9232;
+    transition: .3s;
+}
+
+.custom-policy h5 {
+    margin-bottom: 1rem;
+}
+
+.flex-head {
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+    gap: 16rem; 
+    padding: 1rem;
+}
+
+.flex-head__value {
+    display: flex; 
+    justify-content: start; 
+    align-items: center;
+    gap: 13rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flex-head__value .assignee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.edit-btn {
+    padding: 0.4rem; 
+    color: #fff;
+    background: #ffa250; 
+    border: none; 
+    border-radius: 3px;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+}
+
+.edit-btn:hover {
+    background-color: #ff963b;
+    transition: .2s; 
+}
+
+.delete-btn {
+    padding: 0.4rem; 
+    color: #fff;
+    background: #ff6666; 
+    border: none; 
+    border-radius: 3px;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+}
+
+.delete-btn:hover {
+    background: #ff4444; 
+    transition: .2s
+}

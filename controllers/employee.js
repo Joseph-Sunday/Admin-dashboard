@@ -54,3 +54,10 @@ exports.getEmpLeave = (req, res, next) => {
     path: '/emp-leave'
   });
 };
+
+exports.getLeaveSett = (req, res, next) => {
+  res.status(200).render('employee/leave-settings', {
+    pageTitle: 'Leave-settings', 
+    path: '/leave-sett'
+  });
+};
