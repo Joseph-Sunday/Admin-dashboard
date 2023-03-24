@@ -1,0 +1,143 @@
+<%- include('../includes/head') %>
+<link rel="stylesheet" href="/css/holidays.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<main id="main">
+    <section>
+        <div class="flex">
+            <h3><span class="big">Attendance</span> <br> Dashboard / <span class="grey">Attendance</span></h3>
+        </div>
+
+        <div class="flex">
+            <div class="container">
+                <h3>Timesheet <span class="grey">11 Mar 2023</span></h3>
+                <div class="cont-box">
+                    <h5>Punch in at</h5>
+                    <p>Saturday 11 Mar 2023, 10:00Am</p>
+                </div>
+                <div class="time-flex">
+                    <div class="Timesheet-hrs">
+                        <h4>3.45hrs</h4>
+                    </div>
+                </div>
+                
+                <div class="time-flex">
+                    <a href="">Punch Out</a>
+                </div>
+
+                <div class="flex">
+                    <div class="Timesheet-btn">
+                        <p>Break</p>
+                        <h6>1.2hrs</h6>
+                    </div>
+                    <div class="Timesheet-btn">
+                        <p>Overtime</p>
+                        <h6>3hrs</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h3>Statistics</h3>
+                <div class="stats-box progress-orange">
+                    <div class="flex"><p>Today</p> <h5>3.45 / 8hrs</h5></div>
+                    <progress value="30" max="100"></progress>
+                </div>
+                <div class="stats-box progress-yellow">
+                    <div class="flex"><p>This Week</p> <h5>28 / 40hrs</h5></div>
+                    <progress value="40" max="100"></progress>
+                </div>
+                <div class="stats-box progress-green">
+                    <div class="flex"><p>This Month</p> <h5>90 / 160hrs</h5></div>
+                    <progress value="70" max="100"></progress>
+                </div>
+                <div class="stats-box">
+                    <div class="flex"><p>Remaining</p> <h5>90 / 160hrs</h5></div>
+                    <progress value="70" max="100"></progress>
+                </div>
+                <div class="stats-box progress-blue">
+                    <div class="flex"><p>Overtime</p> <h5>4</h5></div>
+                    <progress value="20" max="100"></progress>
+                </div>
+            </div>
+
+            <div class="container">
+                <div>
+                    <span class="orange">&#x25CE;</span>
+                    <div class="thread">
+                        <p>Punch In at</p>
+                        <span><h6>&#9955; 10:00 AM</h6></span>
+                    </div>
+                    <span class="orange">&#x25CE;</span>
+                    <div class="thread">
+                        <p>Punch Out at</p>
+                        <span><h6>&#9955; 11:00 AM</h6></span>
+                    </div>
+                    <span class="orange">&#x25CE;</span>
+                    <div class="thread">
+                        <p>Punch In at</p>
+                        <span><h6>&#9955; 11:15 AM</h6></span>
+                    </div>
+                    <span class="orange">&#x25CE;</span>
+                    <div class="thread">
+                        <p>Punch Out at</p>
+                        <span><h6>&#9955; 01:30 PM</h6></span>
+                    </div>
+                    <span class="orange">&#x25CE;</span>
+                    <div class="thread">
+                        <p>Punch In at</p>
+                        <span><h6>&#9955; 02:00 PM</h6></span>
+                    </div>
+                    <span class="orange">&#x25CE;</span>
+                    <div class="thread">
+                        <p>Punch Out at</p>
+                        <span><h6>&#9955; 07:30 PM</h6></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="flex">
+            <input type="date" placeholder="Date" name="name" class="searchInput">
+            <input type="text" placeholder="Leave Type" name="leaveType" class="searchInput">
+            <input type="text" placeholder="Leave Status" name="leaveStatus" class="searchInput">
+            <input type="date" placeholder="From" name="from" class="searchInput">
+            <input type="date" placeholder="To" name="to" class="searchInput">
+            <button class="searchBtn">SEARCH</button>
+        </div>
+    </section>
+    <section class="column">
+        <div class="row whiteBG margin-top">
+            <strong><h3>#</h3></strong>
+            <strong><h3>Date</h3></strong>
+            <strong><h3>Punch In</h3></strong>
+            <strong><h3>Punch Out</h3></strong>
+            <strong><h3>Production</h3></strong>
+            <strong><h3>Break</h3></strong>
+            <strong><h3>Overtime</h3></strong>
+        </div>
+
+        <div class="row greyBG">
+            <p>1</p>
+            <p>19 Feb 2023</p>
+            <p>10 AM</p>
+            <p>7 PM</p>
+            <p>9 hr(s)</p>
+            <p>1 hr(s)</p>
+            <p>0.................</p>
+        </div>
+
+        <div class="row whiteBG noDelete">
+            <p>2</p>
+            <p>20 Feb 2023</p>
+            <p>10 AM</p>
+            <p>7 PM</p>
+            <p>9 hr(s)</p>
+            <p>1 hr(s)</p>
+            <p>0.................</p>
+        </div>
+    </section>
+    <span class="right"><i class="fa fa-gear fa-spin" style="font-size:55px; color:#ff7a05;"></i></span>
+</main>
+
+<%- include('../includes/end') %>

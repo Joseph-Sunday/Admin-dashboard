@@ -61,3 +61,17 @@ exports.getLeaveSett = (req, res, next) => {
     path: '/leave-sett'
   });
 };
+
+exports.getAttendance = (req, res, next) => {
+  res.status(200).render('employee/attendance', {
+    pageTitle: 'Attendance', 
+    path: '/attendance'
+  });
+};
+
+exports.getAttendAdm = (req, res, next) => {
+  res.status(200).render('employee/attend-adm', {
+    pageTitle: 'Attendance-admin', 
+    path: '/attend-adm'
+  });
+};

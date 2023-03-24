@@ -85,7 +85,7 @@
   padding: 0.7rem;
   color: #000;
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 button {
@@ -163,4 +163,152 @@ span p {
   background-color: #68a41f;
   border: 1px solid #68a41f; 
   transition: 3s;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+
+/* || ATTEND-ADM STYLES */
+
+.container {
+  padding: 1rem; 
+  border-radius: 5px; 
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: #fff;
+  margin: 2.5rem 0 1rem;
+  width: 30%; 
+}
+
+.cont-box {
+  padding: 0.7rem; 
+  margin: 1rem 0; 
+  border: 1px solid #ececec; 
+  background: #f3f3f3; 
+  border-radius: 3px;
+}
+
+.cont-box p {
+  font-size: small;
+}
+
+.Timesheet-hrs {
+  padding: 3rem 1rem 1rem 1.3rem; 
+  margin-top: 1rem; 
+  border: 5px solid #ececec;  
+  width: 34.5%; 
+  height: 130px;
+  border-radius: 50%;
+  background: #fafafa; 
+  text-align: center;  
+}
+
+.time-flex {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.container a {
+  text-align: center; 
+  padding: 0.7rem; 
+  margin: 1.4rem 0 1rem;
+  text-decoration: none;
+  background: #ff9a42;
+  color: #fff; 
+  font-weight: bold;
+  border-radius: 23px;
+  width: 50%;  
+}
+
+.Timesheet-btn {
+  padding: 0.5rem; 
+  margin: 1rem 0 0.7rem; 
+  border: 1px solid #ececec; 
+  background: #f3f3f3; 
+  border-radius: 2px;
+  width: 45%;
+  text-align: center;  
+}
+
+.Timesheet-btn p {
+  font-size: small; 
+}
+
+.stats-box {
+  padding: 0.7rem; 
+  margin: 1rem 0 0.5rem;
+  border: 1px solid #ececec;
+  border-radius: 5px; 
+}
+
+.stats-box p {
+  font-size: small;
+}
+
+progress {
+  border: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background: #f3f3f3
+}
+
+progress::-moz-progress-bar {
+  background: #ededed;
+  border-radius: 25px;
+}
+
+progress::-webkit-progress-value {
+  background: red;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+progress::-webkit-progress-bar {
+  background: #f3f3f3;
+  border-radius: 25px;
+}
+
+.progress-green progress::-webkit-progress-value {
+  background: rgb(84, 255, 110);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.progress-orange progress::-webkit-progress-value {
+  background: #ffa353;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.progress-yellow progress::-webkit-progress-value {
+  background: rgb(255, 255, 61);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.progress-blue progress::-webkit-progress-value {
+  background: rgb(83, 152, 255);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.thread {
+	padding: 0rem 0.3rem 1rem;
+  border-left: 2px solid #f3f3f3;
+  margin: 0 0.5rem
+}
+
+.thread p {
+  font-size: small; 
+}
+
+.orange {
+  color: #ffbb3d;
 }

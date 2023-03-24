@@ -22,4 +22,8 @@ router.get('/emp-leave', isAuth, employeeController.getEmpLeave);
 
 router.get('/leave-sett', isAuth, employeeController.getLeaveSett);
 
+router.get('/attendance', isAuth, employeeController.getAttendance);
+
+router.get('/attend-adm', isAuth, employeeController.getAttendAdm);
+
 module.exports = router;
