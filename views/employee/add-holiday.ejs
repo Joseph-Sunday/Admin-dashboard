@@ -10,21 +10,22 @@
 <body>
     <main>
         <article>
-            <form action="#add-holiday" method="POST" class="form">
+            <form action="/add-hol" method="post" class="form">
                 <div class="close">
                     <a href="/holidays">&times;</a>
                 </div>
                 <h1>Add Holiday</h1>
                 <section>
                     <label for="holidayName">Holiday Name <span class="red">*</span></label>
-                        <input type="text" name="holidayName" id="holidayName">
+                        <input type="text" name="name" id="holidayName" required>
                     <label for="holidayDate">Holiday Date <span class="red">*</span></label>
-                        <input type="date" name="holidayDate" id="holidayDate">
+                        <input type="date" name="date" id="holidayDate" required>
                     <label for="day">Day <span class="red">*</span></label>
-                        <input type="text" name="day" id="day">
-                    <form action="#add-holiday" method="post">
+                        <input type="text" name="day" id="day" required>
+                    <form action="/add-hol" method="post">
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                         <div class="center">
-                            <button class="save-btn">Save</button>
+                            <button class="save-btn" type="submit">Save</button>
                         </div>
                     </form>
                 </section>

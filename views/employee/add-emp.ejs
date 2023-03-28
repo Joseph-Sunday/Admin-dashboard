@@ -16,17 +16,17 @@
         <article>
             <div>
                 <label for="firstname">Firstname<span class="red">*</span></label>
-                    <input type="text" name="firstname" id="firstname">
+                    <input type="text" name="firstname" id="firstname" required>
                 <label for="username">Username<span class="red">*</span></label>
-                    <input type="text" name="username" id="username">
+                    <input type="text" name="username" id="username" required>
                 <label for="Password">Password</label>
                     <input type="password" name="password" id="password" value="123456">
-                <label for="employee id">Employee ID<span class="red">*</span></label>
-                    <input type="text" name="employee id" id="employee id">
+                <label for="employeeId">Employee ID<span class="red">*</span></label>
+                    <input type="text" name="employeeId" id="employeeId" disabled>
                 <label for="phone">Phone</label>
                     <input type="text" name="phone" id="phone">
                 <label for="department">Department<span class="red">*</span></label>
-                    <input type="text" name="department" id="department">
+                    <input type="text" name="department" id="department" required>
             </div>
             <div>
                 <label for="lastname">Lastname</label>
@@ -36,15 +36,17 @@
                 <label for="confirmPassword">Confirm password</label>
                     <input type="confirmPassword" name="confirmPassword" id="confirmPassword">
                 <label for="joiningDate">Joining Date<span class="red">*</span></label>
-                    <input type="date" name="joiningDate" id="joiningDate">
+                    <input type="date" name="joiningDate" id="joiningDate" required>
                 <label for="company">Company</label>
-                    <input type="text" name="company" id="company">
+                    <input type="text" name="company" id="company" required>
                 <label for="designation">Designation<span class="red">*</span></label>
-                    <input type="text" name="designation" id="designation">
+                    <input type="text" name="designation" id="designation" required>
             </div>
         </article>
-        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-        <button type="submit">Submit</button>
+        <form action="/add-emp" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <button type="submit">Submit</button>
+        </form>
     </form>
 </body>
 </html>

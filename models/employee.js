@@ -13,14 +13,10 @@ const employeeSchema = new Schema({
   username: {
     type: String, 
     required: true
-  },
-  password: {
-    type: String, 
-    required: true
   }, 
   employeeId: {
     type: Schema.Types.ObjectId,
-    required: true 
+    ref: 'User',
   }, 
   joiningDate: {
     type: String, 
@@ -29,11 +25,7 @@ const employeeSchema = new Schema({
   phone: {
     type: Number, 
     required: true
-  }, 
-  company: {
-    type: String, 
-    required: true
-  }, 
+  },  
   department: {
     type: String, 
     required: true
@@ -41,6 +33,10 @@ const employeeSchema = new Schema({
   designation: {
     type: String, 
     required: true
+  }, 
+  company: {
+    type: String, 
+    required: true,
   }
 })
 

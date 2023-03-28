@@ -94,7 +94,6 @@
                 <button class="fa fa-trash delete ubuntu"> Delete</button>
             </div>
         </div>
-
         <div class="row whiteBG noDelete">
             <strong><p>8</p></strong>
             <strong><p>Christmas Day</p></strong>
@@ -105,6 +104,26 @@
                 <button class="fa fa-trash delete ubuntu"> Delete</button>
             </div>
         </div>
+        
+        <% if(holidays.length > 0) { %>
+            <% for(let holiday of holidays) { %>
+                <div class="row greyBG">
+                    <strong><p>*</p></strong>
+                    <strong><p><%= holiday.title %></p></strong>
+                    <strong><p><%= holiday.date %></p></strong>
+                    <strong><p><%= holiday.day %></p></strong>
+                    <div class="buttons">
+                        <form action="">
+                            <button class="fa fa-edit edit ubuntu" type="submit"> Edit</button>
+                        </form>
+                        <form action="/holiday/<%= holiday._id %>" method="delete">
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                            <button class="fa fa-trash delete ubuntu" type="submit"> Delete</button>
+                        </form>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
     </section>
     <span class="right"><i class="fa fa-gear fa-spin" style="font-size:55px; color:#ff7a05;"></i></span>
 </main>

@@ -40,6 +40,7 @@
 
 .block {
   display: block; 
+  margin: 0.6rem 0;
 }
 
 .inputs {
@@ -98,4 +99,12 @@
   position: fixed; 
   left: 87rem; 
   bottom: 3rem; 
+}
+
+
+.flex-row {
+  display: flex; 
+  justify-content: start;
+  align-items: center; 
+  gap: 1.5rem;
 }

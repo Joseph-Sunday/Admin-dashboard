@@ -26,4 +26,10 @@ router.get('/attendance', isAuth, employeeController.getAttendance);
 
 router.get('/attend-adm', isAuth, employeeController.getAttendAdm);
 
+router.post('/add-emp', isAuth, employeeController.postAddEmp);
+
+router.post('/add-hol', isAuth, employeeController.postAddHol);
+
+router.delete('/holiday/:holId', isAuth, employeeController.deleteHol);
+
 module.exports = router;
